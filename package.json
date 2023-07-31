@@ -1,7 +1,7 @@
 {
   "name": "@trollwinter/simple-react",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.9",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -47,7 +47,8 @@
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@babel/preset-react": "^7.22.5",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "babel": "^6.23.0"
   },
   "description": "simple react npm package",
   "repository": {
