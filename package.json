@@ -25,5 +25,22 @@
     "sass": "^1.64.1",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
-  }
+  },
+  "description": "simple react npm package",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarawinter/simple-react.git"
+  },
+  "keywords": [
+    "simple",
+    "react",
+    "package"
+  ],
+  "author": "Sara Winter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarawinter/simple-react/issues"
+  },
+  "homepage": "https://github.com/sarawinter/simple-react#readme"
 }
