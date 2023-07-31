@@ -1,2 +1,3 @@
 import { SimpleBox, SimpleButton } from "./components";
-export { SimpleBox, SimpleButton, };
+import { SimpleButtonStyleEnum, SimpleBoxStyleEnum } from "./enums";
+export { SimpleBox, SimpleButton, SimpleButtonStyleEnum, SimpleBoxStyleEnum };
