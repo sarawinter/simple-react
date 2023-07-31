@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.module.scss";
+import SimpleBox from "./components/box/SimpleBox";
+import { SimpleBoxStyleEnum } from "./components/box/SimpleBoxModel";
+import SimpleButton from "./components/button/SimpleButton";
+import { SimpleButtonStyleEnum } from "./components/button/SimpleButtonModel";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const onBtnOneClick = () => {
+    console.log("primary button clicked");
+  };
+  const onBtnTwoClick = () => {
+    console.log("secondary button clicked");
+  };
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <p>My components</p>
+      <SimpleButton
+        style={SimpleButtonStyleEnum.primary}
+        text="Primary button"
+        onClickEvent={onBtnOneClick}
+        title="Title"
+      />
+      <SimpleButton
+        style={SimpleButtonStyleEnum.secondary}
+        text="Secondary button"
+        onClickEvent={onBtnTwoClick}
+      />
+      <SimpleBox style={SimpleBoxStyleEnum.one} text="Box 1" />
+      <SimpleBox style={SimpleBoxStyleEnum.two} text="Box 2" />
+      <SimpleBox style={SimpleBoxStyleEnum.three} text="Box 3" />
+    </div>
+  );
 }
 
-export default App
+export default App;

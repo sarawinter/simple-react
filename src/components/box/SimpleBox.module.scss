@@ -1,0 +1,16 @@
+.box {
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid gold;
+    margin: 10px;
+
+    &.one {
+        background-color: aquamarine;
+    }
+    &.two {
+        background-color: rgb(255, 220, 175);
+    }
+    &.three {
+        background-color: rgb(255, 249, 172);
+    }
+}
