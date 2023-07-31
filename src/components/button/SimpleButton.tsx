@@ -7,7 +7,7 @@ function SimpleButton({ ...model }: ISimpleButton) {
   return (
     <button
       onClick={model.onClickEvent}
-      className={cssStyle}
+      className={`${styles.button} ${cssStyle}`}
       title={model.title}
     >
       {model.text}
