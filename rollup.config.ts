@@ -22,7 +22,6 @@ export default {
   external: [...Object.keys(pkg.peerDependencies || {})],
   plugins: [
     babel({
-      exclude: "node_modules/**",
       presets: [
         "@babel/preset-env",
         ["@babel/preset-react", { runtime: "automatic" }],
