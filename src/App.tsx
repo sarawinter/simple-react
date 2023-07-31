@@ -1,8 +1,6 @@
 import "./App.module.scss";
-import SimpleBox from "./components/box/SimpleBox";
-import { SimpleBoxStyleEnum } from "./components/box/SimpleBoxModel";
-import SimpleButton from "./components/button/SimpleButton";
-import { SimpleButtonStyleEnum } from "./components/button/SimpleButtonModel";
+import { SimpleBox, SimpleButton } from "./components";
+import { SimpleBoxStyleEnum, SimpleButtonStyleEnum } from "./enums";
 
 function App() {
   const onBtnOneClick = () => {
