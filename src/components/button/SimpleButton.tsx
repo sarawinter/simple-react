@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from "./SimpleButton.module.scss";
-import { ISimpleButton } from "./SimpleButtonModel";
+import { ISimpleButton, SimpleButtonStyleEnum } from "./SimpleButtonModel";
 
 const SimpleButton: React.FC<ISimpleButton> = ({ ...model }) => {
-  const cssStyle = styles[model.style];
+  const cssStyle = styles[model.style || SimpleButtonStyleEnum.primary];
 
   return (
     <button

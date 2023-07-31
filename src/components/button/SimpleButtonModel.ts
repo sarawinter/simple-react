@@ -1,7 +1,7 @@
 export interface ISimpleButton {
   onClickEvent: React.MouseEventHandler<HTMLElement>;
   text: string;
-  style: SimpleButtonStyleEnum;
+  style?: SimpleButtonStyleEnum;
   title?: string;
 }
 
