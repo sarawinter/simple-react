@@ -1,7 +1,7 @@
 {
   "name": "@trollwinter/simple-react",
   "private": false,
-  "version": "0.0.10",
+  "version": "0.0.12",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -19,7 +19,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-typescript2": "^0.35.0"
+    "rollup-plugin-typescript2": "^0.35.0",
+    "@vitejs/plugin-react": "^4.0.3"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.22.5",
@@ -48,7 +49,8 @@
     "@types/react-dom": "^18.2.7",
     "@babel/preset-react": "^7.22.5",
     "typescript": "^5.1.6",
-    "babel": "^6.23.0"
+    "babel": "^6.23.0",
+    "@vitejs/plugin-react": "^4.0.3"
   },
   "description": "simple react npm package",
   "repository": {
