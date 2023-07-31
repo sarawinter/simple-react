@@ -1,11 +1,11 @@
 import { nodeResolve } from "@rollup/plugin-node-resolve";
+import babel from "@rollup/plugin-babel";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import postCSS from "rollup-plugin-postcss";
-import babel from "@rollup/plugin-babel";
+import sucrase from "@rollup/plugin-sucrase";
 
 import pkg from "./package.json" assert { type: "json" };
-import sucrase from "@rollup/plugin-sucrase";
 
 export default {
   input: "src/index.ts",
@@ -22,6 +22,7 @@ export default {
   external: [...Object.keys(pkg.peerDependencies || {})],
   plugins: [
     babel({
+      exclude: "node_modules/**",
       presets: [
         "@babel/preset-env",
         ["@babel/preset-react", { runtime: "automatic" }],

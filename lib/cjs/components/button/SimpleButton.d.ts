@@ -1,3 +1,4 @@
+import React from 'react';
 import { ISimpleButton } from "./SimpleButtonModel";
-declare function SimpleButton({ ...model }: ISimpleButton): import("react/jsx-runtime").JSX.Element;
+declare const SimpleButton: React.FC<ISimpleButton>;
 export default SimpleButton;

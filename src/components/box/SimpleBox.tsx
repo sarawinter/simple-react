@@ -1,7 +1,8 @@
+import React from 'react';
 import styles from "./SimpleBox.module.scss";
 import { ISimpleBox } from "./SimpleBoxModel";
 
-function SimpleBox({text, style}: ISimpleBox) {
+const SimpleBox: React.FC<ISimpleBox> = ({text, style}: ISimpleBox) => {
 
   const cssStyle = styles[style];
 

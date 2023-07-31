@@ -1,7 +1,8 @@
+import React from 'react';
 import styles from "./SimpleButton.module.scss";
 import { ISimpleButton } from "./SimpleButtonModel";
 
-function SimpleButton({ ...model }: ISimpleButton) {
+const SimpleButton: React.FC<ISimpleButton> = ({ ...model }) => {
   const cssStyle = styles[model.style];
 
   return (
